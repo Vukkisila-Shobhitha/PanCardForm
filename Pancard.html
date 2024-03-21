@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pan Card Form</title>
+    <style>
+.heading{
+    background-color: brown;
+    text-align: center;
+}
+h4,i{
+    color: white;
+}
+span{
+    color: red;
+}
+*{
+    margin:0px;
+}
+table,td,tr{
+    border:1px solid black;
+    border-collapse:collapse;
+}
+body{
+    background-color: lightyellow;
+}
+    </style>
+
+</head>
+<body>
+    <div class="heading">
+       <h4> Request for new PAN card/changes or corrections in the PAN Card</h4>
+      <p> <i>
+        Fields marked with *(asterik) are Mandatory. To avoid mistakes please refer <u style="color: orange;">guidelines</u> and <u style="color:orange;">instructions</u>
+      </i> </p>
+    </div>
+    <table width="100%">
+        <tr>
+            <td>  </td>
+            <td> <span> * </span><b>Whether citizen of India</b>
+                <label for="yes"style="padding-left:50px;">Yes</label>
+                <input type="radio" name="type" id="yes">
+                <label for="no"style="padding-left:20px;">No</label>
+                <input type="radio" name="type" id="no">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <span id="red">*</span><b>Permanent Account Number</b>
+                    <input type="text" name="" id="">
+            </td>
+        </tr>
+        <tr>
+            <th id="g"style="width:2%;"><input type="checkbox"></th>
+            <td>
+            <span id="red">*</span><b>1. Name</b>
+            </td>
+            </tr>
+               <tr>
+                <td id="g"style="width:2%;"></td>
+                <td>
+                <label for=""><b> Title</b></label>
+                <label for="Mr" style="padding-left:15px;font-weight:lighter">Shri/Mr</label>
+                <input type="radio" name="type1" id="Mr">
+                <label for="Mrs"style="padding-left:15px;font-weight:lighter">Smt/Mrs.</label>
+                <input type="radio" name="type1" id="Mrs">
+                <label for="Ms"style="padding-left:15px;font-weight:lighter">Kumari/Ms</label>
+                <input type="radio" name="type1" id="Ms">
+                </td>
+               </tr> 
+             <tr>
+                <td></td>
+                <td colspan="2"> 
+                    <div style="display:inline-block;">
+                        <b>Lastname/Surname</b><br>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div style="display:inline-block;inline-block;padding-left:200px">
+                        <b>FirstName</b><br>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div style="display:inline-block;inline-block;padding-left:200px">
+                        <b>MiddleName</b><br>
+                        <input type="text" name="" id="">
+                    </div>
+                </td>
+             
+             </tr>  
+    </table>
+</body>
+</html>
